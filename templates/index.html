@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+ 
+    <head>
+      <meta charset="utf-8">
+      <title>Staffing Structure</title>
+      <script src="{{ url_for('static', filename='script.js') }}"></script>
+      <link rel="stylesheet" href="{{ url_for('static', filename='static/css/style.css') }}">
+      <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+     
+    </head>
+    <body>
+      <div class="container">
+        <h1>Staffing Structure</h1>
+        <form method="post" action="process_form.py">
+          <div class="class-list" id="class-list">
+            <h2>Class List</h2>
+            <!-- Class sections will be added dynamically using JavaScript -->
+          </div>
+          <button type="submit">Submit</button>
+        </form>
+        <div id="class-form">
+          <label for="num-classes">Number of Classes:</label>
+          <input type="number" id="num-classes" name="num-classes" value="1" min="1" max="10">
+          <button type="button" id="add-classes">Add Classes</button>
+        </div>
+      </div>
+    </body>
+    
+</html>
