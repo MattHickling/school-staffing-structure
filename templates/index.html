@@ -4,11 +4,9 @@
     <head>
       <meta charset="utf-8">
       <title>Staffing Structure</title>
-      <script src="{{ url_for('static', filename='script.js') }}"></script>
-      <link rel="stylesheet" href="{{ url_for('static', filename='static/css/style.css') }}">
-      <script src="{{ url_for('static', filename='js/script.js') }}"></script>
-      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-     
+      <script src="static/js/script.js"></script>
+      <link rel="stylesheet" href="static/css/style.css">
+  
     </head>
     <body>
       <div class="container">
@@ -24,8 +22,20 @@
           <label for="num-classes">Number of Classes:</label>
           <input type="number" id="num-classes" name="num-classes" value="1" min="1" max="10">
           <button type="button" id="add-classes">Add Classes</button>
+          <div class="dropdown">
+            <select class="my-dropdown" name="dropdown-1">
+              <option value="">Select an option</option>
+              <option value="Option 1">Option 1</option>
+              <option value="Option 2">Option 2</option>
+              <option value="Option 3">Option 3</option>
+            </select>
+          </div>
         </div>
       </div>
+
+
+      <script src="static/jquery-3.6.4.min.js"></script>
+      <script src="static/js/script.js"></script>
     </body>
     
 </html>
